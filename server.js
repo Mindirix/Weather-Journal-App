@@ -15,15 +15,32 @@ app.use(bodyParser.json());
 
 //cors for cross origin allowance
 const cors = require("cors");
+const { json } = require("body-parser");
 app.use(cors());
 
 // Initialize the main project folder
 app.use(express.static('website'));
 
 // Setup Server
-const port = 8000;
+const port = 5000;
 
 const server = app.listen(port, () => {
     console.log(`runnning on local host: ${port}`);
   });
 
+//Get Route
+app.get('/all', (req, res)=> {
+    console.log("get Route"); // test
+    const weather = json.stringify(projectData);
+    res.send(weather);
+    console.log("from get route");
+    console.log(weather);
+})
+
+//Post Route
+app.post('/add', (req, res)=> {
+    projectData.temp = req.body.temp;
+    projectData.date = req.body.date;
+    projectData.feelings = req.body.feelings;
+  res.send(projectData);
+})
