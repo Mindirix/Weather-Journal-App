@@ -30,10 +30,10 @@ const server = app.listen(port, () => {
 
 //Get Route
 app.get('/all', (req, res)=> {
-    console.log("get Route"); // test
-    const weather = json.stringify(projectData);
+   // console.log("get Route"); // test
+    const weather = JSON.stringify(projectData);
     res.send(weather);
-    console.log("from get route");
+    console.log("data from get route");
     console.log(weather);
 })
 
@@ -41,6 +41,7 @@ app.get('/all', (req, res)=> {
 app.post('/add', (req, res)=> {
     projectData.temp = req.body.temp;
     projectData.date = req.body.date;
-    projectData.feelings = req.body.feelings;
+    projectData.feeling = req.body.feeling;
   res.send(projectData);
+  console.log("Post Received");
 })
