@@ -1,6 +1,6 @@
 # Weather-Journal App Project
 
-Weather app for Udacity that uses asynchronous functions,openWeatherMap API and user data to dynamically update the UI.
+Weather app for Udacity that uses asynchronous functions, openWeatherMap API and user data to dynamically update the UI.
 
 ## Table of Contents
 
@@ -13,7 +13,6 @@ Weather app for Udacity that uses asynchronous functions,openWeatherMap API and 
 
 ## Dependencies
 
----
 First you need to have node.js, express, cors, body-parser installed .
 
 * To install node you can download form the wesite [nodeJs](https://nodejs.org/en/) or install from your package manger [nodeJs Package Manger](https://nodejs.org/en/download/package-manager/) npm included
@@ -28,7 +27,6 @@ npm install body-parser
 
 ## Getting Started
 
----
 server.js file is where you can start the server with node.js
 
 navigate to server.js directory in your pc then in the terminal use:
