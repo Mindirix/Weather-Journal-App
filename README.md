@@ -10,6 +10,7 @@ Weather app for Udacity that uses asynchronous functions, openWeatherMap API and
 * [Development](#development)
 * [Helping Resources](#helping-resources)
 * [Credits](#credits)
+* [License](#License)
 
 ## Dependencies
 
@@ -82,3 +83,7 @@ from there you can enter your city zip code and how you are feeling today and cl
 [Ahmed Moussa](https://github.com/Mindirix)
 
 [Original template](https://github.com/udacity/fend/tree/refresh-2019) is provided by [Udacity](https://github.com/udacity).
+
+#### License
+
+This project is Licensed under the [MIT License](https://github.com/Mindirix/Weather-Journal-App/blob/6915d2cca2d9bc68250fdf8b67a6b01c607a4149/LICENSE#L1)
