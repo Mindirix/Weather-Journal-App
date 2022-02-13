@@ -1,6 +1,6 @@
 # Weather-Journal App Project
 
-Weather app for Udacity that uses asynchronous functions,openWeatherMap API and user data to dynamically update the UI.
+Weather app for Udacity that uses asynchronous functions, openWeatherMap API and user data to dynamically update the UI.
 
 ## Table of Contents
 
