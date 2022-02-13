@@ -31,7 +31,9 @@ const server = app.listen(port, () => {
 //Get Route
 app.get('/all', (req, res)=> {
    // console.log("get Route"); // test
+    //convert data stored in projectData to json
     const weather = JSON.stringify(projectData);
+    //send the converted data
     res.send(weather);
     console.log("data from get route");
     console.log(weather);
@@ -39,6 +41,7 @@ app.get('/all', (req, res)=> {
 
 //Post Route
 app.post('/add', (req, res)=> {
+    //store received data in projectData
     projectData.temp = req.body.temp;
     projectData.date = req.body.date;
     projectData.feeling = req.body.feeling;
