@@ -30,8 +30,9 @@ const getWeather = async (baseURL, userZip, Key) => {
     try{
         const receivedData = await res.json();
         const temp = receivedData.main.temp;
+        const name = receivedData.name;
         console.log(temp);
-        return(temp)
+        return({temp: temp, name: receivedData.name})
     }
     catch(error){
         console.log("error",error);
@@ -70,6 +71,7 @@ const updateUI = async ()=> {
         console.log(updatedData);
         document.getElementById('date').textContent = updatedData.date;
         document.getElementById('temp').textContent = updatedData.temp;
+        document.getElementById('city').textContent = updatedData.name;
         document.getElementById('content').textContent = updatedData.feeling;
     }
     catch(error){

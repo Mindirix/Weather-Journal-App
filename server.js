@@ -42,6 +42,7 @@ app.post('/add', (req, res)=> {
     projectData.temp = req.body.temp;
     projectData.date = req.body.date;
     projectData.feeling = req.body.feeling;
+    projectData.name = req.body.name;
   res.send(projectData);
   console.log("Post Received");
 })
