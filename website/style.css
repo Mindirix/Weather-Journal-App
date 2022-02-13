@@ -17,9 +17,9 @@ body{
     
 }
 
-.holder{
+/* .holder{
     
-}
+} */
 
 /* output display */
 .entry{
@@ -30,19 +30,20 @@ body{
 
 #entryHolder{
     font-size: 25px;
+    color: #ffee00;
 }
 
-#date{
+/* #date{
 
-}
+} */
 
-#temp{
+/* #temp{
 
-}
+} */
 
-#content{
+/* #content{
 
-}
+} */
 
 .headline {
     height: 100px;
