@@ -70,8 +70,8 @@ const updateUI = async ()=> {
         console.log("data returned from the server"); //test
         console.log(updatedData);
         document.getElementById('date').textContent = updatedData.date;
-        document.getElementById('temp').textContent = updatedData.temp;
-        document.getElementById('city').textContent = updatedData.name;
+        document.getElementById('temp').textContent = updatedData.temp.temp;
+        document.getElementById('city').textContent = updatedData.temp.name;
         document.getElementById('content').textContent = updatedData.feeling;
     }
     catch(error){
