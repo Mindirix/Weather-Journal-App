@@ -76,6 +76,10 @@ from there you can enter your city zip code and how you are feeling today and cl
 
 * [FWD online community](https://nfpdiscussions.udacity.com)
 
+* [Neon Text Design](https://css-tricks.com/how-to-create-neon-text-with-css/)
+
+* [Button Design](https://alvarotrigo.com/blog/best-css-button-hover-effects/)
+
 ---
 
 ### Credits
