@@ -10,11 +10,11 @@ let newDate = d.getDate()+'.'+ d.getMonth()+'.'+ d.getFullYear();
 
 
 document.getElementById('generate').addEventListener('click', ()=> {
-    console.log("generate"); //test
+   // console.log("generate"); //test
     const userZip = document.getElementById('zip').value;
-    console.log(userZip); //test
+   // console.log(userZip); //test
     const feeling = document.getElementById('feelings').value;
-    console.log(feeling); //test
+   // console.log(feeling); //test
    //api call
    getWeather(baseURL, userZip, apiKey)
    //new syntax
@@ -25,7 +25,7 @@ document.getElementById('generate').addEventListener('click', ()=> {
 });
 
 const getWeather = async (baseURL, userZip, Key) => {
-    console.log("get Weather") //test
+   // console.log("get Weather") //test
     const res = await fetch(`${baseURL + userZip}${Key}`)
     try{
         const receivedData = await res.json();
@@ -40,7 +40,7 @@ const getWeather = async (baseURL, userZip, Key) => {
 }
 
 const postWeather = async (url = '', data = {})=>{
-    console.log("postWeather"); //test
+   // console.log("postWeather"); //test
     const res = await fetch(url, {
         method : 'POST',
         credentials : 'same-origin',
@@ -62,7 +62,7 @@ const postWeather = async (url = '', data = {})=>{
 }
 
 const updateUI = async ()=> {
-    console.log("updateUI"); //test
+  // console.log("updateUI"); //test
     const req = await fetch('/all');
     try{
         const updatedData = await req.json();
