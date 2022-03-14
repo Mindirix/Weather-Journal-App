@@ -86,7 +86,7 @@ from there you can enter your city zip code and how you are feeling today and cl
 
 [Ahmed Moussa](https://github.com/Mindirix)
 
-[Original template](https://github.com/udacity/fend/tree/refresh-2019) is provided by [Udacity](https://github.com/udacity).
+[Udacity](https://github.com/udacity).
 
 ---
 
